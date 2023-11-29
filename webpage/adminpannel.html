@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>admin home page</title>
+    <style>
+        	body {
+		font-family: Helvetica, sans-serif;
+		
+		text-align: center;
+		font-size: 50;
+	}
+	
+	/* Styling the area of the slides */
+	
+	#slideshow {
+		overflow: hidden;
+		height: 510px;
+		width: 728px;
+		margin: 0 auto;
+	}
+	
+	/* Style each of the sides
+	with a fixed width and height */
+	
+	.slide {
+		float: left;
+		height: 450px;
+		width: 728px;
+	}
+    .slide img{
+        width: 700px ;
+        height: 400px;
+        
+    }
+	
+	/* Add animation to the slides */
+	
+	.slide-wrapper {
+		
+		
+		width:calc(728px * 4);
+		
+		animation : slide 10s ease infinite;
+	}
+	
+	
+	@keyframes slide {
+		
+		/* Calculate the margin-left for
+	each of the slides */
+		20% {
+			margin-left: 0px;
+		}
+		40% {
+			margin-left: calc(-728px * 1);
+		}
+		60% {
+			margin-left: calc(-728px * 2);
+		}
+		
+	}
+
+
+
+
+
+
+
+
+
+
+
+        body{
+            margin: 0px;
+            border: 0px;
+            padding: 0;
+        }
+        .header{
+            width: 100%;
+            height: 120px;
+
+            /* background-color: #f31e1ecd; */
+             background: radial-gradient(#fff, #d48b8b);
+           
+            color: white;
+        }
+        #image{
+            height: 80px;
+            background-color: white;
+            border-radius: 50px;
+        }
+        .main_content{
+            display: flex;
+        }
+        .sidebar{
+            flex: 1;
+            height: 530px;
+            /* background: radial-gradient(#fff, #ffd6d6); */
+            background-color: #deb4b4;
+            /* background-color: rgb(115, 158, 193); */
+        }
+        .content{
+            flex: 3;
+            height: 530px;
+            /* background-color: #34495e; */
+            background: radial-gradient(#fff, #ffd6d6);
+            font-size: 20px;
+            font-weight: bold;
+
+        }
+        ul li{
+            padding: 20px;
+            border-bottom:2px solid gray ;
+            list-style-type: none;
+        }
+        ul li:hover{
+            background-color: red;
+            color: white;
+
+        }
+
+    </style>
+</head>
+<body>
+    <div class="header">
+     <center><img src="images/imgad.jpeg" alt="adminicon" id="image">
+     <br> welcome to admin pannel.
+    </center>
+    </div>
+    <div class="main_content">
+        <div class="sidebar">
+        <ul>
+            <li><a href="invoicf.html">Invoice Page</a></li>
+            <li> <a href="catogeriespage.html">Update Data</a> </li>
+            <li>Check Feedback</li>
+            <li><a href="adminloginpage.html">Logout</a></li>
+        </ul>
+        </div>
+        <div class="content">
+            <center><h3>This Is  Admin's Page</h3></center>
+        
+
+
+
+
+
+
+
+
+
+
+
+            <div id="slideshow">
+                <div class="slide-wrapper">
+                    
+                    <!-- Define each of the slides
+                and write the content -->
+                    <div class="slide">
+                        <!-- <h1 class="slide-number">
+                            GeeksforGeeks
+                        </h1> -->
+                        <img class="slide-number" src="images/istockphoto-533259345-612x612.jpg" alt="">
+                    </div>
+                    <div class="slide">
+                        <!-- <h1 class="slide-number">
+                            A computer science portal
+                        </h1> -->
+                        <img src="images/istockphoto-533833660-612x612.jpg" class="slide-number" alt="">
+                    </div>
+                    <div class="slide">
+                        <!-- <h1 class="slide-number">
+                            This is an example of
+                        </h1> -->
+                        <img src="images/istockphoto-1321250663-612x612.jpg" class="slide-number" alt="">
+                    </div>
+                    
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+        </div>
+    </div>
+</body>
+</html>
